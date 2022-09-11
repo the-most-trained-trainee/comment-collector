@@ -1,16 +1,16 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import React from 'react';
+import CommentForm from './CommentForm';
+import CommentList from './CommentList';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <CommentForm />
+        <CommentList/>
+      </div>
+    );
+  }
+}
+
+export default App;
